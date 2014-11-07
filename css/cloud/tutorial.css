@@ -1,0 +1,207 @@
+
+/* チュートリアル */
+
+.tuto_title{
+	font-size:28px;
+	line-height:28px;
+	padding:20px 0 5px 0;
+	margin:0 0 20px 0;
+}
+ .tuto_area{
+	width:980px;
+	position:relative;
+	margin:40px auto 30px auto;
+}
+
+#sidebar {
+	float:left;
+  width: 234px;
+  position:relative;
+}
+
+#nav {
+  width: 234px;
+  margin:-1px 0 0 -1px;
+}
+
+#tuto_menu{
+  width: 232px;
+	margin:0px 0 20px 0;
+}
+#sidebar .archive{
+	color:#ffffff;
+	padding:0 10px;
+	margin-bottom:1px;
+	background:#3497F2;
+	line-height:50px;
+}
+#sidebar .archive_top{
+	margin-bottom:1px;
+	background:#0aa546;
+}
+#sidebar .archive_top a{
+	display:block;
+	color:#ffffff;
+	margin-bottom:1px;
+	padding:0 10px;
+	line-height:50px;
+	text-decoration:none;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	-o-transition: all 0.1s linear;
+}
+#sidebar .archive_top a:hover{
+	background:#04cd53;
+}
+
+
+#sidebar .subMenu{
+	background:#fafaf9;
+	margin-bottom:1px;
+	padding:10px 0;	
+}
+#sidebar .subMenu li{
+	display:block;
+}
+#sidebar .subMenu li a{
+	text-decoration:none;
+	display:block;
+	padding:0 10px 0 15px;
+	line-height:28px;
+	background:#fafaf9;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	-o-transition: all 0.1s linear;
+}
+#sidebar .subMenu li a:hover{
+	background:#d2e9d9;
+}
+#sidebar .subMenu li.sub{
+	display:block;
+}
+#sidebar .subMenu li.sub a{
+	padding:0 10px 0 30px;
+	line-height:28px;
+	display:block;
+	background:#fafaf9;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	-o-transition: all 0.1s linear;
+}
+#sidebar .subMenu li.sub a:hover{
+	background:#d2e9d9;
+}
+
+
+#sidebar .subMenu_o{
+	background:#fafaf9;
+	margin-bottom:1px;
+	padding:10px 0;	
+}
+#sidebar .subMenu_o li{
+	display:block;
+}
+.subMenu_o li a{
+	text-decoration:none;
+	display:block;
+	padding:0 10px 0 15px;
+	line-height:28px;
+	background:#fafaf9;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	-o-transition: all 0.1s linear;
+}
+#sidebar .subMenu_o li a:hover{
+	background:#d2e9d9;
+}
+.subMenu_o li span.sub_tit{
+	text-decoration:none;
+	display:block;
+	padding:0 10px 0 15px;
+	line-height:28px;
+	color:#666666;
+}
+#sidebar .subMenu li.sub{
+	display:block;
+}
+#sidebar .subMenu li.sub a{
+	padding:0 10px 0 30px;
+	line-height:28px;
+	display:block;
+	background:#fafaf9;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	-o-transition: all 0.1s linear;
+}
+#sidebar .subMenu_o li.sub a:hover{
+	background:#d2e9d9;
+}
+
+#tuto_main{
+	float:right;
+	width:696px;
+		padding: 0px 0px 70px 30px;
+}
+
+#tuto_main h1{
+	font-size:28px;
+	padding:10px;
+	margin:0 0 0 0;
+	margin-bottom:40px;
+	background:#d2e9d9;
+	font-weight:normal;
+}
+#tuto_main h2{
+	font-size:24px;
+	margin:0 0 0 15px;
+	margin-bottom:30px;
+}
+#tuto_main h3{
+	font-size:22px;
+	margin:0 0 0 30px;
+	margin-bottom:20px;
+}
+#tuto_main h4{
+	font-size:20px;
+	margin:0 0 0 45px;
+	margin-bottom:10px;
+}
+#tuto_main h5{
+	font-size:16px;
+	margin:0 0 0 45px;
+	margin-bottom:10px;
+}
+#tuto_main p{
+	font-size:16px;
+	margin:0 0 0 60px;
+	line-height:24px;
+	margin-bottom:30px;
+}
+#tuto_main p.code_tit{
+	font-size:16px;
+	margin:0 0 0 60px;
+	line-height:20px;
+	margin-bottom:10px;
+}
+
+
+#tuto_main div{
+	margin:0 0 50px 45px;
+}
+#tuto_main div img{
+	width:100%;
+	max-width:575px;
+}
+#tuto_main pre{
+	margin:0 0 40px 60px;
+	padding-top:13px;
+	font-size:12px;
+	background: url(/images/tutorial/code_bg.png) left top no-repeat;
+}
+
+.page-back {
+ position: fixed;
+ bottom: 10px;
+ right: 10px;
+}
+

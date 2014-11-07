@@ -1,0 +1,551 @@
+﻿@charset "UTF-8";
+
+/*
+form style
+*/
+
+/* common style */
+strong {
+	color: #f92a01;
+}
+
+/*	form page base
+************************************************/
+#site-header {
+	position: static;
+}
+#contents {
+	padding-top: 0;
+}
+.form-ttl {
+	margin-top: 40px;
+}
+.entry-form-header {
+	position: relative;
+	margin-top: -73px;
+	height: 115px;
+}
+.contact .entry-form-header {
+	margin-top: -69px;
+	height: 175px;
+}
+.entry-form-header .caution {
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+}
+.media-img01 {
+	position: absolute;
+	top: 5px;
+	right: -21px;
+}
+.sponsor-img01 {
+	position: absolute;
+	top: 0;
+	right: -90px;
+}
+.state-txt {
+	margin-bottom: 5px;
+	text-align: center;
+	font-size: 167%;
+}
+.entry-form {
+	background: #0aa546;
+	color: #fff;
+}
+.entry-form p {
+	margin-bottom: 5px;
+}
+.field01 {
+	width: 902px;
+}
+.entry-form .field01 {
+	padding-top: 40px;
+	height: 125px;
+}
+.field02,
+.field03 {
+	width: 902px;
+	border-top: 1px solid #078939;
+}
+.confirm-field {
+	padding: 20px;
+	border-top: 1px solid #078939;
+	text-align: center;
+}
+.contact-form .confirm-field {
+	border-color: #dcdbdb;
+}
+.contact-field {
+	margin-bottom: 15px;
+	border: 1px solid #dcdbdb;
+	width: 900px;
+	background: #fff;
+}
+.agreement {
+	margin: 0 auto 15px;
+	padding: 15px;
+	border: 1px solid #e0dddd;
+	width: 695px;
+	height: 160px;
+	background: #fff;
+	color: #000;
+	font-size: 93%;
+	line-height: 1.6;
+	text-align: left;
+	overflow: scroll;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	position: relative;
+	behavior: url("/css/PIE.htc");
+}
+.agreement hgroup {
+	margin-bottom: 10px;
+}
+.agreement h2 {
+	margin-top: 20px;
+	margin-bottom: 4px;
+}
+.agreement h3 {
+	margin-top: 10px;
+	margin-bottom: 4px;
+}
+.agreement ol,
+.agreement dt {
+	margin: 4px 0;
+}
+.agreement li {
+	list-style: none;
+}
+.agreement textarea {
+	margin: 0 auto 15px;
+	border: none;
+	width: 690px;
+	height: 140px;
+	background: #fff;
+	overflow: visible;
+}
+.entry-confirm-header .form-ttl {
+	margin-bottom: 15px;
+}
+.entry-confirm .field01,
+.entry-confirm .field02,
+.entry-confirm .field03 {
+	background: #dcd9d9;
+}
+.entry-confirm .confirm-field {
+	border-top: 1px solid #078939;
+	background: #0aa546;
+}
+.contact-confirm .confirm-field {
+	border-top-color: #dcdbdb;
+	background: #fff;
+}
+.confirm-field-inner {
+	padding: 30px 0 15px;
+}
+
+/*	form table
+***********************************************/
+.entry-form table,
+.contact-form table {
+	margin: 20px auto;
+	width: 850px;
+}
+.field01 table{
+	margin-top: 0;
+}
+.entry-confirm table,
+.contact-confirm table {
+	width: 902px;
+}
+form th {
+	padding: 0 10px;
+	background: #0aa546;
+	font-size: 139%;
+	text-align: left;
+}
+th em {
+	font-style: normal;
+}
+.entry-form th {
+	width: 228px;
+}
+.contact-form th {
+	width: 160px;
+	background: none;
+}
+.entry-confirm th {
+	padding: 20px 35px;
+	width: 28%;
+	color: #ffffff;
+}
+.entry-confirm .first-child th,
+.entry-confirm .first-child td {
+	padding-top: 40px;
+}
+.entry-confirm .last-child th,
+.entry-confirm .last-child td {
+	padding-bottom: 40px;
+}
+.contact-confirm th {
+	width: 180px;
+	background: #ffffff;
+	color: #000000;
+	vertical-align: middle;
+}
+form td {
+	padding: 15px 10px;
+	vertical-align: top;
+	text-align: left;
+}
+.entry-form .field01 td {
+	padding: 0 10px;
+}
+.entry-confirm td {
+	padding: 20px 25px;
+	width: 618px;
+	background: #dcd9d9;
+	font-size: 139%;
+	vertical-align: middle;
+}
+.contact-confirm td {
+	width: 627px;
+	background: #dcd9d9;
+	font-size: 123.1%;
+}
+.th-os-type,
+.th-business-conditions,
+.th-address,
+.th-department,
+.th-passwd-confirm,
+.th-classification,
+.th-company-name,
+.contact .th-mail,
+.th-document-request {
+	vertical-align: middle;
+}
+.th-name,
+.th-kana,
+.th-telno,
+.th-passwd,
+.th-person-in-charge,
+.th-url-scheme,
+.th-preferred-date,
+.th-inquiry,
+.th-installations,
+.th-app-url,
+.entry-form .th-mail {
+	padding-top: 45px;
+}
+.th-app-title {
+	padding-top: 60px;
+}
+.contact-confirm .th-inquiry {
+	vertical-align: top;
+}
+.th-inquiry .heading-required {
+	display: inline-block;
+	vertical-align: top;
+}
+.lt-ie8 .th-inquiry .heading-required {
+	display: inline;
+	zoom: 1;
+}
+span.heading-required {
+	padding-left: 10px;
+}
+span.heading-not-essential {
+	display: block;
+	padding-left: 28px;
+}
+.expanded-info {
+	font-size: 108%;
+}
+.contact-form .expanded-info {
+	margin-bottom: 5px;
+}
+.expanded-info span {
+	padding: 0 5px;
+}
+
+/*	input select
+***********************************************/
+label {
+	display: inline-block;
+	*display: inline;
+	/* IE7 inline-block hack */
+	*zoom: 1;
+	padding: 10px 0;
+	font-size: 123.1%;
+	vertical-align: baseline;
+}
+.field01 label {
+	width: 100px;
+}
+input[type="radio"],
+input[type="checkbox"] {
+	margin: 0 .5ex;
+	padding-left: 10px;
+	vertical-align: baseline;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+select {
+	height: 27px;
+}
+.contact-form input[type="text"],
+.contact-form input[type="password"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form input[type="url"],
+.contact-form textarea {
+	background-color: #f3f1f1;
+}
+.contact-form .txt-name,
+.txt-kana,
+.txt-telno,
+.txt-passwd,
+.txt-passwd-confirm,
+.txt-person-in-charge,
+.txt-department {
+	width: 200px;
+}
+.entry-form .txt-name,
+.txt-company-name,
+.txt-address,
+.txt-mail,
+.txt-app-title,
+.txt-app-url,
+.txt-url-scheme {
+	width: 450px;
+}
+.txt-inquiry {
+	width: 620px;
+	height: 185px;
+}
+
+/*	confirm-field
+***********************************************/
+p.consent-txt {
+	font-size: 108%;
+}
+.media-regist .consent-txt {
+	margin-bottom: 5px;
+}
+.sponsor-regist .consent-txt {
+	margin-bottom: 30px;
+}
+.contact-form .consent-txt {
+	margin-bottom: 20px;
+	font-size: 108%;
+}
+.consent-txt a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+}
+.contact-form .consent-txt a {
+	color: #0aa546;
+}
+.consent-txt a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+.contact-form .consent-txt a:hover {
+	color: #0aa546;
+}
+.confirm-txt {
+	padding-bottom: 10px;
+	color: #ffffff;
+	font-size: 139%;
+}
+.contact-confirm .confirm-txt {
+	color: #000000;
+}
+
+/*	form finish
+***********************************************/
+.entry-finish-header .form-ttl {
+	margin-bottom: 15px;
+}
+.entry-finish {
+	width: 902px;
+	height: 400px;
+	background: #dcd9d9;
+}
+#finish {
+	text-align: center;
+}
+.thanks-message {
+	padding: 50px 0 60px;
+	text-align: center;
+	font-size: 139%;
+	line-height: 2;
+}
+
+/*	form readme
+***********************************************/
+.readme {
+	position: absolute;
+	top: 70px;
+	left: 400px;
+}
+.readme h2 {
+	margin-bottom: 5px;
+	font-size: 108%;
+}
+.readme li {
+	position: relative;
+	color: #0aa546;
+	list-style-position: inside;
+}
+.readme li span {
+	position: absolute;
+	top: 0;
+	left: 10px;
+	width: 360px;
+	color: #000;
+}
+.readme a {
+	color: #0aa546;
+	font-weight: bold;
+	text-decoration: none;
+}
+.readme a:hover {
+	color: #0aa546;
+	text-decoration: underline;
+}
+.contact-img01 {
+	position: absolute;
+	top: 15px;
+	right: -28px;
+}
+
+/*	form button
+***********************************************/
+.button-container {
+	margin-bottom: 35px;
+	text-align: center;
+}
+.confirm-field p button,
+.button-container button {
+	overflow: visible;
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 0;
+	width: auto;
+	border: 0;
+	background: none;
+	font-size: 0;
+	line-height: 0;
+	cursor: pointer;
+	vertical-align: baseline;
+}
+.button-container .caution {
+	padding: 15px 0;
+}
+
+/*** button enter ***/
+.enter-btn {
+	display: block;
+	padding: 0;
+	border: 0;
+	width: 272px;
+	height: 93px;
+	background: url(/images/submit_btn01.png) no-repeat 0 0;
+	text-indent: -9999px;
+	cursor: pointer;
+}
+.enter-btn:hover {
+	background-position: 0 -93px;
+}
+.contact-form .enter-btn {
+	background-image: url(/images/contact_btn01.png);
+}
+.enter-btn-inactive {
+	display: block;
+	padding: 0;
+	border: 0;
+	width: 272px;
+	height: 93px;
+	background: url(/images/submit_btn01.png) no-repeat 0 -93px;
+	text-indent: -9999px;
+	opacity: 0.8;
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+	cursor: default;
+}
+.contact-form .enter-btn-inactive {
+	background-image: url(/images/contact_btn01.png);
+}
+
+/*** button submit ***/
+.submit-btn {
+	display: block;
+	padding: 0;
+	border: 0;
+	width: 272px;
+	height: 93px;
+	background: url(/images/submit_btn02.png) no-repeat 0 0;
+	text-indent: -9999px;
+	cursor: pointer;
+}
+.submit-btn:hover {
+	background-position: 0 -93px;
+}
+.contact-confirm .submit-btn {
+	background-image: url(/images/contact_btn02.png);
+}
+
+/*** button return ***/
+.return-btn {
+	display: block;
+	padding: 0;
+	border: 0;
+	width: 212px;
+	height: 54px;
+	background: url(/images/submit_btn03.png) no-repeat 0 0;
+	text-indent: -9999px;
+	cursor: pointer;
+}
+.return-btn:hover {
+	background-position: 0 -54px;
+}
+.contact-confirm .return-btn {
+	background-image: url(/images/contact_btn03.png);
+}
+
+/*** button return to top ***/
+.return-top-btn {
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+	border: 0;
+	width: 212px;
+	height: 53px;
+	background: url(/images/submit_btn04.png) no-repeat 0 -53px;
+	text-indent: -9999px;
+	cursor: pointer;
+}
+.return-top-btn:hover {
+	background-position: 0 0;
+}
+
+/*** button return2 ***/
+.return-btn2 {
+	display: block;
+	padding: 0;
+	border: 0;
+	width: 212px;
+	height: 54px;
+	background: url(/images/submit_btn05.png) no-repeat 0 0;
+	text-indent: -9999px;
+	cursor: pointer;
+}
+.return-btn2:hover {
+	background-position: 0 -54px;
+}

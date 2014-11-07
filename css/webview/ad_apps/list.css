@@ -1,0 +1,238 @@
+/* --------------------
+	Main Contents
+-------------------- */
+header.list {
+	background: #ff8ee0 url('/images/webview/ad_apps/bg.png') 0 0 repeat;
+}
+article.list {
+	padding-top: 10px;
+	background: #ff8ee0 url('/images/webview/ad_apps/bg.png') 0 0 repeat;
+}
+.list section {
+	margin: -15px auto 0;
+	padding-top: 7%;
+}
+section:last-child {
+	margin-bottom: 0px;
+}
+.list .new {
+	background: url('/images/webview/ad_apps/tag_new.png') 20px 0 no-repeat;
+	background-size: 20%;
+	margin-top: 0;
+}
+.list .rec {
+	background: url('/images/webview/ad_apps/tag_rec.png') 20px 0 no-repeat;
+	background-size: 20%;
+}
+.list .rate {
+	float: right;
+	width: 30%;
+	height: auto;
+	margin: -7% 0 0 70%;
+}
+.list .rate .rate_in{
+	width: 74%;
+	height: auto;
+	margin: 0 17% 0 9%;
+	background-size: 100%;
+	background-repeat:no-repeat;
+}
+.list .rate .rate_in img{
+	width:100%;
+	height:auto;
+}
+.list .rate .rate_in.r5 {
+	background-image:url(/images/webview/ad_apps/rate5.png);
+}
+.list .rate .rate_in.r4 {
+	background-image:url(/images/webview/ad_apps/rate4.png);
+}
+.list .rate .rate_in.r3 {
+	background-image:url(/images/webview/ad_apps/rate3.png);
+}
+.list .rate .rate_in.r2 {
+	background-image:url(/images/webview/ad_apps/rate2.png);
+}
+.list .rate .rate_in.r1 {
+	background-image:url(/images/webview/ad_apps/rate1.png);
+}
+.list .rate .rate_in.r0 {
+	background-image:url(/images/webview/ad_apps/rate0.png);
+}
+.list .wrap {
+	clear: both;
+	width: 100%;
+	min-height: 100px;
+	margin: 0 auto;
+}
+.list .box {
+	padding-top: 10px;
+	background: url('/images/webview/ad_apps/bg_sticky.png') 0 0 repeat-y;
+	background-size: 100%;
+}
+.list section h1 {
+	margin-bottom: 5px;
+	font-size: 16px;
+	line-height: 20px;
+	color:#000000;
+}
+.list section h1 a {
+	color: #000;
+}
+.list .left_col {
+	overflow: hidden;
+	float: left;
+	width: 70%;
+}
+.list .app_info {
+	width: 95%;
+	padding:0 0 0 5%;
+	min-height: 60px;
+	height: 100%;
+	box-sizing: border-box;
+}
+	.list .app_info p {
+		color: #9b0ea4;
+		font-size: 12px;
+		line-height: 16px;
+	}
+.list .right_col {
+	float: right;
+	width: 30%;
+	height:auto;
+	overflow: hidden;
+}
+
+	.list .right_col img.app_icon {
+		width:74%;
+		height: auto;
+		margin: 10px 17% 0 9%;
+		border-radius:10%;
+	}
+	.list .price {
+		display: block;
+		width: 74%;
+		height: auto;
+		padding:0 17% 0 9%;
+		margin:0;
+	}
+	.list .price img{
+		width: 100%;
+	}
+.list .meta {
+	margin: 5px 20px 0 0;
+	padding: 0 0 2px 0;
+	border-top: 1px solid #ccc;
+	background-size: 100%;
+	background-repeat:no-repeat;
+	background-position:3px 2px;
+
+}
+
+.list .meta img{
+	width:100%;
+	height:auto;
+}
+.list .meta.category_0.attr_0 {
+	background-image:url(/images/webview/ad_apps/icon_none0.png);
+}
+.list .meta.category_0.attr_1 {
+	background-image:url(/images/webview/ad_apps/icon_none1.png);
+}
+.list .meta.category_0.attr_2 {
+	background-image:url(/images/webview/ad_apps/icon_none2.png);
+}
+.list .meta.category_0.attr_3 {
+	background-image:url(/images/webview/ad_apps/icon_none3.png);
+}
+.list .meta.category_1.attr_0 {
+	background-image:url(/images/webview/ad_apps/icon_game0.png);
+}
+.list .meta.category_1.attr_1 {
+	background-image:url(/images/webview/ad_apps/icon_game1.png);
+}
+.list .meta.category_1.attr_2 {
+	background-image:url(/images/webview/ad_apps/icon_game2.png);
+}
+.list .meta.category_1.attr_3 {
+	background-image:url(/images/webview/ad_apps/icon_game3.png);
+}
+.list .meta.category_2.attr_0 {
+	background-image:url(/images/webview/ad_apps/icon_tool0.png);
+}
+.list .meta.category_2.attr_1 {
+	background-image:url(/images/webview/ad_apps/icon_tool1.png);
+}
+.list .meta.category_2.attr_2 {
+	background-image:url(/images/webview/ad_apps/icon_tool2.png);
+}
+.list .meta.category_2.attr_3 {
+	background-image:url(/images/webview/ad_apps/icon_tool3.png);
+}
+.list .meta.category_3.attr_0 {
+	background-image:url(/images/webview/ad_apps/icon_social0.png);
+}
+.list .meta.category_3.attr_1 {
+	background-image:url(/images/webview/ad_apps/icon_social1.png);
+}
+.list .meta.category_3.attr_2 {
+	background-image:url(/images/webview/ad_apps/icon_social2.png);
+}
+.list .meta.category_3.attr_3 {
+	background-image:url(/images/webview/ad_apps/icon_social3.png);
+}
+.list .meta.category_4.attr_0 {
+	background-image:url(/images/webview/ad_apps/icon_news0.png);
+}
+.list .meta.category_4.attr_1 {
+	background-image:url(/images/webview/ad_apps/icon_news1.png);
+}
+.list .meta.category_4.attr_2 {
+	background-image:url(/images/webview/ad_apps/icon_news2.png);
+}
+.list .meta.category_4.attr_3 {
+	background-image:url(/images/webview/ad_apps/icon_news3.png);
+}
+.list .meta.category_5.attr_0 {
+	background-image:url(/images/webview/ad_apps/icon_enter0.png);
+}
+.list .meta.category_5.attr_1 {
+	background-image:url(/images/webview/ad_apps/icon_enter1.png);
+}
+.list .meta.category_5.attr_2 {
+	background-image:url(/images/webview/ad_apps/icon_enter2.png);
+}
+.list .meta.category_5.attr_3 {
+	background-image:url(/images/webview/ad_apps/icon_enter3.png);
+}
+.list .meta.category_6.attr_0 {
+	background-image:url(/images/webview/ad_apps/icon_life0.png);
+}
+.list .meta.category_6.attr_1 {
+	background-image:url(/images/webview/ad_apps/icon_life1.png);
+}
+.list .meta.category_6.attr_2 {
+	background-image:url(/images/webview/ad_apps/icon_life2.png);
+}
+.list .meta.category_6.attr_3 {
+	background-image:url(/images/webview/ad_apps/icon_life3.png);
+}
+
+.list .sticky img {
+	margin-top: -5px;
+	width: 100%;
+}
+
+/* モバイルレイアウト：481px ～ 768px */
+@media only screen and (min-width: 580px) {
+	.list section h1 {
+	font-size: 32px;
+	line-height: 40px;
+}
+
+	.list .app_info p {
+		font-size: 24px;
+		line-height: 32px;
+	}
+
+}

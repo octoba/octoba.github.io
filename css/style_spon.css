@@ -1,0 +1,542 @@
+@charset "UTF-8";
+
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+}
+body {
+	line-height:1;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+	display:block;
+}
+nav ul {
+	list-style:none;
+}
+blockquote, q {
+	quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content:'';
+	content:none;
+}
+a {
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+}
+/* change colours to suit your needs */
+ins {
+	background-color:#ff9;
+	color:#000;
+	text-decoration:none;
+}
+/* change colours to suit your needs */
+mark {
+	background-color:#ff9;
+	color:#000; 
+	font-style:italic;
+	font-weight:bold;
+}
+del {
+	text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+	border-bottom:1px dotted;
+	cursor:help;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+/* change border colour to suit your needs */
+hr {
+	display:block;
+	height:1px;
+	border:0;   
+	border-top:1px solid #cccccc;
+	margin:1em 0;
+	padding:0;
+}
+input, select {
+	vertical-align:middle;
+}
+
+/* YUI 3.8.1 (build 5795) Copyright 2013 Yahoo! Inc. http://yuilibrary.com/license/ */
+/**
+ * Percents could work for IE, but for backCompat purposes, we are using keywords.
+ * x-small is for IE6/7 quirks mode.
+ */
+body {
+	font:13px/1.231 arial,helvetica,clean,sans-serif;
+	*font-size:small; /* for IE */
+	*font:x-small; /* for IE in quirks mode */
+	font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+}
+/**
+ * Nudge down to get to 13px equivalent for these form elements
+ */ 
+select,
+input,
+button,
+textarea {
+	font:99% arial,helvetica,clean,sans-serif;
+	font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+}
+/**
+ * To help tables remember to inherit
+ */
+table {
+	font-size:inherit;
+	font:100%;
+}
+/**
+ * Bump up IE to get to 13px equivalent for these fixed-width elements
+ */
+pre,
+code,
+kbd,
+samp,
+tt {
+	font-family:monospace;
+	*font-size:108%;
+	line-height:100%;
+}
+
+/*!
+ * Bootstrap v2.2.2
+ *
+ * Copyright 2012 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ */
+form {
+	margin: 0 0 10px;
+}
+label,
+input,
+button {
+	font-size: 108%;
+	font-weight: normal;
+	line-height: 20px;
+}
+input,
+button {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+label {
+	display: block;
+	margin-bottom: 5px;
+}
+input[type="text"],
+input[type="password"] {
+	display: inline-block;
+	height: 27px;
+	padding: 4px 6px;
+	margin-bottom: 10px;
+	font-size: 14px;
+	line-height: 27px;
+	color: #555555;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	vertical-align: middle;
+}
+input {
+	width: 206px;
+}
+input[type="text"],
+input[type="password"] {
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	-webkit-transition: border linear .2s, box-shadow linear .2s;
+	-moz-transition: border linear .2s, box-shadow linear .2s;
+	-o-transition: border linear .2s, box-shadow linear .2s;
+	transition: border linear .2s, box-shadow linear .2s;
+}
+input[type="text"]:focus,
+input[type="password"]:focus {
+	border-color: rgba(82, 168, 236, 0.8);
+	outline: 0;
+	outline: thin dotted \9;
+	/* IE6-9 */
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
+	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
+}
+input:-moz-placeholder {
+	color: #999999;
+}
+input:-ms-input-placeholder {
+	color: #999999;
+}
+input::-webkit-input-placeholder {
+	color: #999999;
+}
+.input-small {
+	width: 90px;
+}
+.input-medium {
+	width: 150px;
+}
+.input-signin {
+	width: 182px;
+}
+.input-large {
+	width: 210px;
+}
+.input-xlarge {
+	width: 270px;
+}
+.input-xxlarge {
+	width: 530px;
+}
+input {
+	margin-left: 0;
+}
+input[disabled] {
+	cursor: not-allowed;
+	background-color: #eeeeee;
+}
+input:focus:invalid {
+	color: #b94a48;
+	border-color: #ee5f5b;
+}
+input:focus:invalid:focus {
+	border-color: #e9322d;
+	-webkit-box-shadow: 0 0 6px #f8b9b7;
+	-moz-box-shadow: 0 0 6px #f8b9b7;
+	box-shadow: 0 0 6px #f8b9b7;
+}
+.form-inline input {
+	display: inline-block;
+	*display: inline;
+	/* IE7 inline-block hack */
+	*zoom: 1;
+	margin-bottom: 0;
+	vertical-align: middle;
+}
+.form-inline label {
+	display: inline-block;
+}
+
+.btn {
+	display: inline-block;
+	*display: inline;
+	/* IE7 inline-block hack */
+	*zoom: 1;
+	margin-bottom: 0;
+	margin-top: 0;
+	*margin-left: .3em;
+	padding: 4px 12px;
+	*padding: 4px 6px;
+	font-size: 93%;
+	font-weight: bold;
+	line-height: 27px;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	color: #ffffff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	background-color: #516a7b;
+	background-image: -moz-linear-gradient(top, #6a8395, #385162);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#6a8395), to(#385162));
+	background-image: -webkit-linear-gradient(top, #6a8395, #385162);
+	background-image: -o-linear-gradient(top, #6a8395, #385162);
+	background-image: linear-gradient(to bottom, #6a8395, #385162);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff6a8395', endColorstr='#ff385162', GradientType=0);
+	/*border-color: #385162 #385162 #002a80;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);*/
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+	border: 1px solid #6a8395;
+	*border: 0;
+	/*border-color: #c5c5c5;*/
+	/*border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);*/
+	border-bottom-color: #385162;
+	*background-color: #516a7b;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+	-webkit-transition: opacity 0.1s linear;
+	-moz-transition: opacity 0.1s linear;
+	-o-transition: opacity 0.1s linear;
+	transition: opacity 0.1s linear;
+}
+.ie8 .btn {
+	margin-left: .3em;
+}
+.btn:hover,
+.btn:active,
+.btn.active,
+.btn.disabled,
+.btn[disabled] {
+	color: #ffffff;
+	/*background-color: #6a8395;*/
+	*background-color: #6a8395;
+}
+.btn:active,
+.btn.active {
+	background-color: #6a8395 \9;
+}
+.btn:first-child {
+	*margin-left: 0;
+}
+.btn:hover {
+	text-decoration: none;
+	opacity: 0.80;
+	filter: alpha(opacity=80);
+	/*background-position: 0 15px;
+	-webkit-transition: background-position 0.1s linear;
+	-moz-transition: background-position 0.1s linear;
+	-o-transition: background-position 0.1s linear;
+	transition: background-position 0.1s linear;*/
+}
+.btn:focus {
+	outline: thin dotted #333;
+	outline: 5px auto -webkit-focus-ring-color;
+	outline-offset: -2px;
+}
+.btn.active,
+.btn:active {
+	background-image: none;
+	outline: 0;
+	-webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+	-moz-box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+	box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+}
+.btn.disabled,
+.btn[disabled] {
+	cursor: default;
+	background-image: none;
+	opacity: 0.65;
+	filter: alpha(opacity=65);
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+/*
+Sticky Footer Solution
+by Steve Hatcher 
+http://stever.ca
+http://www.cssstickyfooter.com
+*/
+
+html, body {height: 100%;width:100%}
+#container {min-height: 100%;}
+#contents {
+	overflow: auto;
+	padding-bottom: 45px;
+}
+footer {
+	position: relative;
+	margin-top: -45px; /* negative value of footer height */
+	height: 45px;
+	clear: both;
+}
+/*Opera Fix*/
+body:before {/* thanks to Maleika (Kohoutec)*/
+	content: "";
+	height: 100%;
+	float: left;
+	width: 0;
+	margin-top: -32767px;/* thank you Erik J - negate effect of float*/
+}
+/*ie6 Fix*/
+.ie6 #container {
+	display: table;
+	height: 100%;
+}
+
+/*
+style
+*/
+html {
+	background: url(/images/spon/bg01.png) repeat-x 0 0;
+}
+body {
+	/*background:  url(/images/spon/bg02.png) repeat-x 0 434px;*/
+}
+#container {
+	width: 100%;
+	min-width: 1000px;
+	background: url(/images/spon/bg02.png) no-repeat 16px 154px;
+}
+#signin-area {
+	float: right;
+	margin-right: 46px;
+	width: 493px;
+	height: 374px;
+	z-index: 9999;
+}
+#brand-header {
+	overflow: hidden;
+	margin-top: 96px;
+	margin-bottom: 13px;
+	width: 404px;
+	height: 152px;
+}
+#brand-header h1 {
+	width: 404px;
+	height: 152px;
+	background: url(/images/spon/brand_header.png) no-repeat;
+	text-indent: -9999px;
+}
+.forget {
+	margin-right: 23px;
+	color: #424242;
+	font-size: 12px;
+	text-align: right;
+}
+.forget a {
+	color: #0aa546;
+	text-decoration: none;
+}
+.forget a:hover {
+	color: #0aa546;
+	text-decoration: underline;
+}
+
+#contents {
+	clear: right;
+	width: 100%;
+}
+#news-area {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+}
+#news {
+	float: right;
+	margin-top: 30px;
+	margin-right: 46px;
+	width: 493px;
+	color: #ffffff;
+}
+#news h1 {
+	margin-bottom: 6px;
+	font-size: 93%;
+	font-weight: bold;
+	line-height: 1.4;
+}
+#news th {
+	padding: 4px 0;
+	width: 120px;
+	font-size: 93%;
+	font-weight: normal;
+	line-height: 1.4;
+	text-align: left;
+}
+#news td {
+	padding: 4px 0;
+	font-size: 93%;
+	line-height: 1.4;
+	text-align: left;
+}
+#site-footer {
+	min-width: 1000px;
+	height: 45px;
+}
+.footer-inner {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	/*margin: 0 auto;*/
+}
+#brand-footer {
+	position: absolute;
+	top: 5px;
+	left: 15px;;
+	width: 110px;
+	height: 25px;
+	background: url(/images/spon/brand_footer.png) no-repeat;
+}
+#brand-footer a {
+	display: block;
+	width: 110px;
+	height: 25px;
+	text-indent: -9999px;
+}
+#footer-nav {
+	float: left;
+	margin-left: 123px;
+}
+#footer-nav li {
+	display: inline-block;
+	padding: 10px 5px 10px 5px;
+	font-size: 93%;
+	line-height: 25px;
+}
+.lt-ie8 #footer-nav li {
+	display: inline;
+	zoom: 1;
+}
+#footer-nav li a {
+	color: #ffffff;
+	text-decoration: none;
+}
+#footer-nav li a:hover {
+	text-decoration: underline;
+}
+#copyright {
+	float: left;
+	padding: 10px 0 10px 27px;
+	height: 25px;
+	background: url(/images/spon/logo02.png) no-repeat left center;
+	color: #ffffff;
+	font-size: 77%;
+	line-height: 25px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	#container {
+		background-image: url(/images/spon/bg02@2x.png);
+		background-size: 438px 296px;
+	}
+	#brand-header h1 {
+		background-image: url(/images/spon/brand_header@2x.png);
+		background-size: 404px 152px;
+	}
+	#brand-footer {
+		background-image: url(/images/spon/brand_footer@2x.png);
+		background-size: 79px 25px;
+	}
+}
+

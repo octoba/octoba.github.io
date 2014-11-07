@@ -1,0 +1,425 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+}
+ol, ul, li{
+	list-style:none;
+}
+
+
+body {
+	line-height:1;
+}
+
+a:link {	color:#666666;text-decoration:underline;}
+a:visited {	color:#666666;text-decoration:underline;}
+a:hover {	color:#666666;text-decoration:none;}
+a:active {	color:#666666;text-decoration:none;}
+
+.red{color:#ff0000; font-size:12px;}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+	display:block;
+}
+
+nav ul {
+	list-style:none;
+}
+
+blockquote, q {
+	quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content:'';
+	content:none;
+}
+
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+
+input, select {
+	vertical-align:middle;
+}
+
+/* For modern browsers */
+.cf:before,
+.cf:after {
+	content:"";
+	display:table;
+}
+
+.cf:after {
+	clear:both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+.cf {
+	zoom:1;
+}
+
+.display_no
+{
+	display: none;
+}
+.display_show
+{
+	display: block;
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	font-size:0;
+	clear: both;
+	visibility:hidden;
+}
+
+/* /_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_
+Base： レ　イ　ア　ウ　ト　
+/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_*/
+
+/*==============
+ body
+ ===============*/
+body {
+	width: 100%;
+	height: 100%;
+	background-color:#FFF;
+	/*font-family:"メイリオ", "ヒラギノ角ゴ Pro W3", Meiryo, "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;*/
+    /*font-family: "FOT-筑紫A丸ゴシック Std E","TsukuARdGothicStd-E";*/
+	font-family: "NUDモトヤアポロ Std W4";
+/*	font-family: "FOT-筑紫ゴシック Pr5N R";*/
+	color:#333333;
+}
+
+/*==============
+ login
+ ===============*/
+html,body, #loginbox {
+  height: 100%;
+}
+body > #loginarea {
+  height: auto;
+  min-height: 100%;
+}
+
+#loginbox {
+	width:530px !important;
+	padding:0 0 60px 0;
+	margin:0 auto;
+}
+
+#loginbox .login_logo{
+	padding-top:25px;
+	margin:0 auto 49px auto;
+}
+#loginbox .login_logo a{
+	background:url(/images/login_logo.png) no-repeat left top;
+	width:330px;
+	height:64px;
+	display:block;
+	margin:0 auto;
+}
+
+#loginbox .login_box{
+	background:#ffffff;
+	border:1px solid #535353;
+	border-radius:9px 9px 9px 9px;
+	box-shadow:0 0 7px rgba(0, 0, 0, 0.5);
+	margin-bottom:60px;
+}
+#loginbox .login_title{
+	background:#3497f2;
+	border-top-left-radius:8px;
+	border-top-right-radius:8px;
+	line-height:41px;
+}
+#loginbox .login_title p{
+	padding:0 15px;
+	color:#ffffff;
+	font-weight:bold;
+
+}
+
+#loginbox .login_body{
+	background:#ffffff;
+	border-bottom-left-radius:8px;
+	border-bottom-right-radius:8px;
+	padding:20px;
+}
+
+#loginbox .login_body input.text{
+	width:266px;
+	height:31px;
+	-moz-box-shadow: inset 0 0 4px rgba(0,0,0,0.2);
+	-webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
+	padding:4px 10px;
+	font-size:1em;
+	border-radius:5px;
+	color:#7f7f7f;
+	border:solid 1px #a6a6a6;
+	margin:0 0 18px 0;
+}
+#loginbox .login_body textarea.text2{
+	width:266px;
+	height:120px;
+	-moz-box-shadow: inset 0 0 4px rgba(0,0,0,0.2);
+	-webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
+	padding:4px 10px;
+	font-size:1em;
+	border-radius:5px;
+	color:#7f7f7f;
+	border:solid 1px #a6a6a6;
+	margin:0 0 18px 0;
+}
+#loginbox.send .login_body input.text{
+	width:466px;
+}
+#loginbox.send .login_body textarea.text2{
+	width:466px;
+}
+#loginbox .login_body .login_btn{
+	height:35px;
+}
+#loginbox .login_body .login_btn_pass{
+	height:35px;
+}
+#loginbox .login_body .login_btn_pass input{
+	width:100%;
+}
+
+#loginbox .login_body .login_btn .forgot{
+	float:left;
+	line-height:35px;
+	font-size:10px;
+}
+#loginbox .login_body .login_btn input{
+	float:right;
+}
+#loginbox .login_body .login_btn .doui{
+	float:left;
+	line-height:35px;
+	font-size:12px;
+}
+#loginbox .login_body .login_btn .doui input{
+	display:inline-block;
+	float:none;
+	vertical-align:middle;
+}
+#loginbox .login_body .login_btn .doui p{
+	display:inline-block;
+	font-size:16px;
+
+}
+#loginbox div .login_txt{
+	padding:10px 0;
+	font-size:12px;
+	line-height:16px;
+}
+#loginbox div .login_err{
+	color:#ff0000;
+	padding:10px 0;
+	font-size:12px;
+	line-height:16px;
+}
+#loginbox div.login_close{
+	width:100px;
+	margin:0 auto;
+}
+
+#loginbox div input::-webkit-input-placeholder {
+    color:    #e0dfdf;
+}
+#loginbox div input:-moz-placeholder {
+    color:    #e0dfdf;
+}
+.login_footer{
+	padding:15px 0;
+	text-align:center;
+	background:#000000;
+	color:#ffffff;
+	font-size:10px;
+	line-height:18px;
+	width:100%;
+  margin-top: -70px;
+  height:40px;
+}
+
+.login_box.regist{
+	margin-bottom:20px !important;
+}
+.kiyaku{
+	font-size:12px;
+	padding:0px 0 10px 0;
+}
+.already{
+	font-size:10px;
+	padding:10px 0 0 0;
+}
+.regist_caution{
+	text-align:center;
+	font-size:10px;
+	margin-bottom:60px;
+}
+
+.login_radio{
+	margin:0 0 10px 0;
+}
+
+.login_radio li{
+	float:left;
+	margin:0 10px 0 0;
+}
+
+/*==============
+ input button color
+ ===============*/
+/* iCheck plugin Flat skin, green
+----------------------------------- */
+.icheckbox_flat-green,
+.iradio_flat-green {
+    display:inline-block;
+    margin: 0 5px 0 0;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    background: url(/images/green.png) no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.icheckbox_flat-green {
+    background-position: 0 0;
+}
+    .icheckbox_flat-green.checked {
+        background-position: -22px 0;
+    }
+    .icheckbox_flat-green.disabled {
+        background-position: -44px 0;
+        cursor: default;
+    }
+    .icheckbox_flat-green.checked.disabled {
+        background-position: -66px 0;
+    }
+
+.iradio_flat-green {
+    background-position: -88px 0;
+}
+    .iradio_flat-green.checked {
+        background-position: -110px 0;
+    }
+    .iradio_flat-green.disabled {
+        background-position: -132px 0;
+        cursor: default;
+    }
+    .iradio_flat-green.checked.disabled {
+        background-position: -154px 0;
+    }
+
+/* Retina support */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (-moz-min-device-pixel-ratio: 1.5),
+       only screen and (-o-min-device-pixel-ratio: 3/2),
+       only screen and (min-device-pixel-ratio: 1.5) {
+    .icheckbox_flat-green,
+    .iradio_flat-green {
+        background-image: url(green@2x.png);
+        -webkit-background-size: 176px 22px;
+        background-size: 176px 22px;
+    }
+}
+
+.confirm_area {
+	padding:20px 0 10px 0;
+}
+
+.confirm_area p{
+	padding:0 0 15px 0;
+	word-break:break-all;
+}
+/* ツールチップ */
+.tip {
+    display: none;
+    position: absolute;
+    top: -30px;
+    left: 85%;
+    cursor: pointer;
+    font-size: 13px;
+    color: #ffffff;
+    padding: 20px 22px 0 23px;
+    font-family: "FOT-筑紫ゴシック Pr5 L","TsukuGoPr5-L", sans-serif;
+    background: url(/images/tip_bg.png) 0 0 no-repeat;
+    text-align: center;
+    width: 160px;
+    height: 65px;
+}
+
+.tip.rev_sch {
+    display: none;
+    position: absolute;
+    top: -75px;
+    left:inherit;
+    right: 140px;
+    cursor: pointer;
+    font-size: 13px;
+    color: #ffffff;
+    padding: 26px 22px 0 16px;
+    font-family: "FOT-筑紫ゴシック Pr5 L","TsukuGoPr5-L", sans-serif;
+    background: url(/images/tip_bg2.png) 0 0 no-repeat;
+    text-align: center;
+    width: 160px;
+    height: 59px;
+}
+.tip.rev_btn {
+    display: none;
+    position: absolute;
+    top: -15px;
+    left:-100px;
+    cursor: pointer;
+    font-size: 13px;
+    color: #ffffff;
+    padding: 26px 22px 0 16px;
+    font-family: "FOT-筑紫ゴシック Pr5 L","TsukuGoPr5-L", sans-serif;
+    background: url(/images/tip_bg2.png) 0 0 no-repeat;
+    text-align: center;
+    width: 160px;
+    height: 59px;
+}
+.tip.rev_sch2 {
+    display: none;
+    position: absolute;
+    top: -30px;
+    left:-180px;
+    cursor: pointer;
+    font-size: 13px;
+    color: #ffffff;
+    padding: 26px 22px 0 16px;
+    font-family: "FOT-筑紫ゴシック Pr5 L","TsukuGoPr5-L", sans-serif;
+    background: url(/images/tip_bg2.png) 0 0 no-repeat;
+    text-align: center;
+    width: 160px;
+    height: 59px;
+}

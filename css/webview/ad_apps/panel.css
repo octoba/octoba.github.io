@@ -1,0 +1,73 @@
+/* panel view */
+header.panel  {
+	background: #232429;
+}
+article.panel  {
+	background: #232429;
+	padding:10px 3px 0 3px;
+}
+article.panel a {
+	display:block;
+	width: 50%;
+	float: left;
+}
+.panel section {
+	overflow: hidden;
+	position: relative;
+	margin:3px;
+    border-radius: 15px;
+	background: url(/images/webview/ad_apps/stripe.png) left top;
+
+}
+.panel .app_name {
+	overflow: hidden;
+	padding: 0px 10px;
+	box-sizing: border-box;
+	font-size: 14px;
+	line-height: 1.2em;
+	color: #fc4006;
+}
+.panel .app_icon {
+	overflow: hidden;
+	display: block;
+	width: 100%;
+}
+.panel .box {
+	overflow: hidden;
+	position: relative;
+	padding: 5px 0 0.5em 0;
+}
+.panel .app_info {
+    padding: 0 10px;
+	box-sizing: border-box;
+	color:#000000;
+	font-size: 12px;
+	line-height: 1em;
+    overflow: hidden;
+}
+.panel .etc {
+	position: absolute;
+	bottom: 0;
+}
+.panel .new {
+	position: absolute;
+	display: block;
+	width: 35%;
+	height: 35%;
+	top: 0;
+	right: 0;
+	background: url(/images/webview/ad_apps/new.png) 0 0 no-repeat;
+	background-size: 100%;
+	border-radius: 0 15px 0 0;
+}
+
+/* モバイルレイアウト：481px ～ 768px */
+@media only screen and (min-width: 580px) {
+.panel .app_name {
+	font-size: 28px;
+}
+.panel .app_info {
+	font-size: 24px;
+}
+
+}

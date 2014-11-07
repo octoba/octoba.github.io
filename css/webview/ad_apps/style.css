@@ -1,0 +1,174 @@
+/* fixed footer */
+html,
+body {
+	height: 100%;
+}
+.wrap {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto 0px;
+}
+
+/* reset */
+body {
+	-webkit-text-size-adjust: 100%;
+}
+h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: navy;
+}
+
+/* clearfix */
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+.clearfix {
+	min-height: 1px;
+}
+* html .clearfix {
+	height: 1px;
+	/*¥*//*/
+	height: auto;
+	overflow: hidden;
+	/**/
+}
+.both {
+	clear: both;
+}
+
+/* For modern browsers */
+.cf:before,
+.cf:after {
+	content:"";
+	display:table;
+}
+
+.cf:after {
+	clear:both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+.cf {
+	zoom:1;
+}
+
+/* --------------------
+	Header
+-------------------- */
+
+header h1 {
+	padding: 10px 0;
+	background: #322f2f;
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
+	background: #322f2f url('/images/webview/ad_apps/logo.png') 10px center no-repeat;
+	background-size: auto 80%;
+}
+.flexarea {
+}
+.flexslider {
+	overflow: hidden;
+	position: relative;
+}
+.slides {
+	display: block;
+}
+.slides li {
+	float: left;
+	width: 100%;
+}
+.slides li img {
+	width: 100%;
+}
+/* slider */
+.flex-control-paging {
+	width: 100%;
+	margin: 0px auto 0;
+	padding: 2px 0 0 0;
+	box-sizing: border-box;
+	text-align: center;
+}
+.flex-control-paging li {
+	display: inline-block;
+	padding: 0 3px;
+}
+
+
+.flex-control-paging li a {
+	display: block;
+	width: 5px;
+	height: 5px;
+	padding: 1px;
+	background: url('/images/webview/ad_apps/indicator_bg.png') 0 0 no-repeat;
+	background-size: 5px;
+	text-indent: -9999px;
+	cursor: pointer;
+}
+.flex-control-paging li a.flex-active {
+	background-image: url('/images/webview/ad_apps/indicator.png');
+}
+
+/* --------------------
+	Footer
+-------------------- */
+footer {
+	clear: both;
+	text-align: center;
+	box-sizing: border-box;
+	background: #322f2f;
+}
+footer .btn_agree{
+	clear: both;
+	display:block;
+	color: #FFF;
+	text-decoration:underline;
+	text-align:center;
+	margin:0 auto;
+	padding:15px 0px;
+	background: #322f2f;
+	font-size:14px;
+}
+
+/* --------------------
+	Ad Load
+-------------------- */
+#bottomLoading{
+    display:none;
+    margin:20px auto 20px auto;
+    width:26px;
+    height:26px;
+    background: url('/images/webview/ad_apps/loading.gif') 0 0 no-repeat;
+}
+
+.kiyaku_btn {
+	width:92%;
+	padding:3% 5% 3% 5%;
+	border-radius: 8px;
+	background:-webkit-gradient(linear, 100% 0%, 100% 100%, from(#ffffff), to(#f6f6f6));
+	border: 1px solid #ccc;
+	margin:5% 4% 5% 4%;
+	font-size:80%;
+	color:#aaa;
+}
+
+/* モバイルレイアウト：481px ～ 768px */
+@media only screen and (min-width: 580px) {
+header h1 {
+	font-size: 24px;
+}
+footer .btn_agree{
+	font-size:20px;
+}
+
+}

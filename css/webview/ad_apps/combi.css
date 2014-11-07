@@ -1,0 +1,8 @@
+body {
+	background: #b30102 url('/images/webview/ad_apps/bg_shelf.png') 0 60% no-repeat;
+	background-size: 100%;
+}
+.combi .list {
+	padding-top: 20px;
+	margin-top:-40px;
+}

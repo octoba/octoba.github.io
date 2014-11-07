@@ -1,0 +1,438 @@
+@charset "UTF-8";
+
+input,
+select {
+	height: 42px;
+	font-size: 139%;
+}
+/*	共通
+************************/
+#site-header {
+	position: static;
+}
+#contents {
+	padding-top: 0;
+}
+.main {
+	margin: 50px auto 0;
+}
+.simulation .main {
+	background: url(/images/sim/simulation_img01.png) no-repeat 750px 60px;
+}
+.page-title {
+	margin-bottom: 20px;
+}
+.lead {
+	font-size: 130%;
+	margin-bottom: 40px;
+}
+.simulation-description {
+	margin-bottom: 90px;
+	font-size: 108%;
+	line-height: 1.8;
+}
+/*タブ*/
+.tab-wrapper {
+	position: relative;
+	height: 60px;
+	z-index: 10;
+}
+#tab-nav {
+	z-index: 10;
+	margin: 0 auto;
+	width: 786px;
+	position: relative;
+}
+#tab-nav li {
+	display: inline-block;
+}
+.lt-ie8 #tab-nav li {
+	display: inline;
+	zoom: 1;
+}
+.tab01 a {
+	display: block;
+	padding: 0;
+	width: 386px;
+	height: 60px;
+	border: 0;
+	background: url(/images/sim/simulation_tab.png) no-repeat 0 0;
+	text-indent: -9999px;
+}
+.tab01 a:hover {
+	background: url(/images/sim/simulation_tab.png) no-repeat 0 -120px;
+}
+.tab01 a.active {
+	background: url(/images/sim/simulation_tab.png) no-repeat 0 -60px;
+}
+li.tab02 {
+	margin-left: 9px;
+}
+.tab02 span {
+	display: block;
+	padding: 0;
+	width: 386px;
+	height: 60px;
+	border: 0;
+	background: url(/images/sim/simulation_tab.png) no-repeat -386px 0;
+	text-indent: -9999px;
+}
+.tab02 a {
+	display: block;
+	padding: 0;
+	width: 386px;
+	height: 60px;
+	border: 0;
+	background: url(/images/sim/simulation_tab.png) no-repeat -386px 0;
+	text-indent: -9999px;
+}
+
+.tab02 a:hover {
+	background: url(/images/sim/simulation_tab.png) no-repeat -386px -120px;
+}
+.tab02 a.active {
+	background: url(/images/sim/simulation_tab.png) no-repeat -386px -60px;
+}
+
+.simulation-contents {
+	/*clear: both;*/
+	width: 100%;
+}
+.simulation-contents-wrapper {
+	margin: 0 auto 20px;
+	padding-bottom: 20px;
+	width: 100%;
+	position: relative;
+	zoom: 1;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
+}
+.ie7 .simulation-contents-wrapper {
+	padding-top: 50px;
+}
+.ie7 .simulation-contents-wrapper,
+.ie8 .simulation-contents-wrapper {
+	-webkit-box-shadow: 0px 0px 5px 3px #bbbaba;
+	-moz-box-shadow: 0px 0px 5px 3px #bbbaba;
+	box-shadow: 0px 0px 5px 3px #bbbaba;
+	behavior: url(/css/PIE.htc);
+}
+.simulation .simulation-contents-wrapper {
+	background: #0aa546;
+	overflow: hidden;
+}
+.simulation-result .simulation-contents-wrapper {
+	background: url(/images/sim/simulation_wrapper_right.png) #0aa546 no-repeat left bottom;
+	overflow: hidden;
+}
+/*入力画面*/
+.simulation-select {
+	margin: 0 auto 60px;
+	padding-top: 40px;
+	width: 832px;
+}
+.simulation .btn-container {
+	clear: both;
+	margin: 0 auto;
+	padding: 20px 0;
+	width: 836px;
+}
+.combo_select {
+	opacity:0;
+	filter: alpha(opacity=0);
+	-ms-filter: "alpha(opacity=0)";
+	-moz-opacity:0;
+	-khtml-opacity: 0;
+}
+.combo_arrow {
+	float: right;
+	margin-bottom: -30px;
+	padding: 4px 8px;
+}
+.combo_wrapper div {
+	position: relative;
+	margin-right: 30px;
+	top: -40px;
+}
+.combo_text {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.dropdown-menu ul {
+	max-height: 200px!important;
+}
+.ie7 .dropdown-menu ul {
+	overflow-x: hidden!important;
+	width: 355px;
+}
+.simulation-text-box {
+	width: 340px;
+	height: 28px;
+}
+.simulation .simulation-select em {
+	color: #f1f330;
+	vertical-align: middle;
+	font-style:normal;
+}
+/*左カラム*/
+dl {
+	position: relative;
+}
+dt {
+	padding: 20px 0 5px;
+}
+span.heading-no {
+	margin-right: 18px;
+	color: #fff;
+	vertical-align: middle;
+	font-size: 230%;
+}
+span.heading {
+	margin-right: 10px;
+	color: #fff;
+	vertical-align: middle;
+	font-size: 153.9%;
+}
+span.caption {
+	color: #fff;
+	vertical-align: middle;
+	font-size: 108%;
+}
+
+/*右カラム*/
+.right-column-heading {
+	position: absolute;
+	top: 0;
+	left: 405px;
+}
+.right-column-body {
+	position: absolute;
+	top: 60px;
+	right: 0;
+	width: 425px;
+}
+
+.sdk-wrapper label img {
+	cursor: pointer;
+}
+ul.sdk-wrapper {
+	overflow: hidden;
+}
+ul.sdk-wrapper li {
+	display: inline-block;
+	margin-bottom: 20px;
+	width: 205px;
+	height: 125px;
+	list-style: none;
+}
+.lt-ie8 ul.sdk-wrapper li {
+	display: inline;
+	zoom: 1;
+}
+/*偶数*/
+ul.sdk-wrapper li.even-edge {
+	margin-left: 10px;
+}
+/*一番最後*/
+ul.sdk-wrapper li.edge {
+	float: right;
+}
+.sdk-wrapper li .description {
+	margin-top: 5px;
+}
+.sdk-wrapper li .description a {
+	float: right;
+	margin-right: 8px;
+}
+.sdk-wrapper li .description span{
+	float: left;
+	margin-top: 2px;
+	color: #fff;
+	font-size: 123.1%;
+}
+/*シミュレーションするボタン*/
+.sdk-wrapper li .description a:hover {
+	opacity: 0.8;
+	-ms-filter: "alpha(opacity=80)";
+	filter: alpha(opacity=80);
+}
+.sdk-wrapper li .description img {
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/sim/simulation_description_btn.png', sizingMethod='scale');
+}
+.btn-container a {
+	display: block;
+	width: 836px;
+	height: 92px;
+}
+.btn-container a:hover {
+	display: block;
+	width: 836px;
+	height: 92px;
+	opacity: 0.8;
+	-ms-filter: "alpha(opacity=80)";
+	filter: alpha(opacity=80);
+}
+.btn-container img {
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/sim/simulation_run_btn.png', sizingMethod='scale');
+}
+/*結果画面*/
+.result-container {
+	overflow: hidden;
+	margin: 0 auto;
+	width: 736px;
+}
+.result-container {
+	margin-top: 50px;
+	padding-bottom: 25px;
+	background: #fff;
+	z-index: 1;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
+}
+.ie7 .result-container,
+.ie8 .result-container {
+	position: relative;
+	zoom: 1;
+	-webkit-box-shadow: 0px 0px 5px 3px #898989;
+	-moz-box-shadow: 0px 0px 5px 3px #898989;
+	box-shadow: 0px 0px 5px 3px #898989;
+	behavior: url(/css/PIE.htc);
+}
+.result-contents-header {
+	padding-top: 30px;
+	text-align: center;
+}
+.result-contents-header img {
+	z-index: 10;
+}
+.simulation-result .result-body {
+	margin: 0 auto;
+	width: 620px;
+	background:url(/images/sim/result_img01.png) center top no-repeat;
+}
+.monthly-amount {
+	float: left;
+	width: 220px;
+	text-align: center;
+}
+.yearly-amount {
+	float: right;
+	width: 220px;
+	text-align: center;
+}
+.monthly-amount-img,
+.yearly-amount-img {
+	margin: 10px 0 20px;
+}
+.monthly-amount  strong,
+.yearly-amount  strong {
+	display: block;
+	font-weight: bold;
+	font-size: 308%;
+}
+.reward-img {
+	float: left;
+	width: 180px;
+	text-align: center;
+}
+.reward-img img {
+	position: relative;
+	z-index: 100;
+	margin-top: -5px;
+}
+.simulation-result .caution {
+	clear: both;
+	margin: 0 auto;
+	padding-top: 60px;
+	width: 520px;
+	text-align: center;
+	font-size: 93%;
+	line-height: 1.5;
+}
+.simulation-result .caution em {
+	color: #e90506;
+	font-style:normal;
+}
+/*エラー画面*/
+.simulation-error .simulation-contents-wrapper {
+	background: #0aa546;
+	overflow: hidden;
+}
+.simulation-error .result-body {
+	margin: 0 auto 20px;
+	width: 620px;
+	height: 300px;
+	background:url(/images/sim/simulation_error_img01.png) center bottom no-repeat;
+}
+.ie7 .simulation-error .result-body {
+	height: 350px;
+}
+.simulation-error .result-body  p {
+	font-size: 167%;
+	text-align: center;
+	color: #f55959;
+	font-weight: bold;
+	margin-top: 42px;
+	line-height: 1.64;
+}
+.simulation-error .btn-container {
+	margin: 40px auto 10px;
+	width: 274px;
+}
+.simulation-result .btn-container {
+	margin: 20px auto;
+	width: 274px;
+}
+/*導入申し込みボタン*/
+.subscription-btn a {
+	display: block;
+	margin-bottom: 10px;
+	padding: 0;
+	width: 274px;
+	height: 143px;
+	border: 0;
+}
+.subscription-btn  a:hover {
+	display: block;
+	padding: 0;
+	width: 274px;
+	height: 143px;
+	opacity: 0.8;
+	-ms-filter: "alpha(opacity=80)";
+	filter: alpha(opacity=80);
+	margin-bottom: 10px;
+}
+.subscription-btn img {
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/sim/subscription_btn.png', sizingMethod='scale');
+}
+
+/*もう一度シミュレーションするボタン*/
+.again-btn a {
+	display: block;
+	padding: 0;
+	width: 274px;
+	height: 59px;
+	border: 0;
+}
+.again-btn a:hover {
+	display: block;
+	padding: 0;
+	width: 274px;
+	height: 59px;
+	border: 0;
+	opacity: 0.8;
+	-ms-filter: "alpha(opacity=80)";
+	filter: alpha(opacity=80);
+}
+.again-btn img {
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/sim/again_btn.png', sizingMethod='scale');
+}

@@ -1,0 +1,152 @@
+/* reset */
+body {
+	-webkit-text-size-adjust: 100%;
+	font: 100%/100% "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: navy;
+}
+input {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/* clearfix */
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+.clearfix {
+	min-height: 1px;
+}
+* html .clearfix {
+	height: 1px;
+	/*¥*//*/
+	height: auto;
+	overflow: hidden;
+	/**/
+}
+
+/*--------------------
+  main
+--------------------*/
+html {
+	width: 100%;
+	height: 100%;
+}
+body {
+	width: 100%;
+	height: 100%;
+	background:#ffffff;
+}
+article {
+	width: 80%;
+	margin: auto;
+	padding: 30% 10% 10%;
+	text-align:left;
+}
+article input {
+	width: 100%;
+	height:auto;
+}
+.login_fb {
+	margin: 10% 0;
+}
+.login_mail {
+	position: relative;
+}
+.inpt_mail {
+	min-height: 30px;
+	margin: 30px 5%;
+	width:83%;
+	padding: 5px 3%;
+	border: 1px solid #000;
+	box-sizing: border-box;
+}
+.submit.mail,.submit.close {
+	width:100%;
+	display:block;
+	cursor: pointer;
+	color: #FFF;
+	text-decoration:none;
+	text-align:center;
+	margin:0 0 0 0;
+	padding: 6px 0px;
+	border:1px solid #b5b5b5;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	background:#62664c;
+	font-size:14px;
+	height:45px;
+}
+.confirm.close,.confirm.act_btn{
+	width:100%;
+	display:block;
+	cursor: pointer;
+	color: #FFF;
+	text-decoration:none;
+	text-align:center;
+	margin:0 0 15px 0%;
+	padding: 6px 0px;
+	border:1px solid #b5b5b5;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	background:#62664c;
+	font-size:14px;
+	height:45px;
+}
+.btn_black{
+	display:block;
+	cursor: pointer;
+	color: #FFF;
+	text-decoration:none;
+	text-align:center;
+	margin:0 auto 20px auto;
+	width:100%;
+	height:43px;
+	line-height:43px;
+	padding: 0px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	background:#62664c;
+	font-size:14px;
+}
+.submit, .open {
+	display: block;
+	width: 100%;
+	margin: auto;
+}
+.txt_end {
+	margin-bottom: 5%;
+}
+.txt_end img {
+	width: 100%;
+	height: auto;
+	margin-left: 3%;
+}
+
+.title {
+	display: block;
+	position: relative;
+	width: 100%;
+	font-weight: normal;
+	font-size: 16px;
+	line-height:44px;
+	background:#e3e3e3;
+	height:44px;
+	text-align:center;
+}
+

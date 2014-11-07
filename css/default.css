@@ -1,0 +1,547 @@
+@charset "UTF-8";
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+}
+body {
+	line-height:1;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+	display:block;
+}
+nav ul {
+	list-style:none;
+}
+blockquote, q {
+	quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content:'';
+	content:none;
+}
+a {
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+}
+/* change colours to suit your needs */
+ins {
+	background-color:#ff9;
+	color:#000;
+	text-decoration:none;
+}
+/* change colours to suit your needs */
+mark {
+	background-color:#ff9;
+	color:#000;
+	font-style:italic;
+	font-weight:bold;
+}
+del {
+	text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+	border-bottom:1px dotted;
+	cursor:help;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+/* change border colour to suit your needs */
+hr {
+	display:block;
+	height:1px;
+	border:0;
+	border-top:1px solid #cccccc;
+	margin:1em 0;
+	padding:0;
+}
+input, select {
+	vertical-align:middle;
+}
+
+/* YUI 3.8.1 (build 5795) Copyright 2013 Yahoo! Inc. http://yuilibrary.com/license/ */
+/**
+ * Percents could work for IE, but for backCompat purposes, we are using keywords.
+ * x-small is for IE6/7 quirks mode.
+ */
+body {
+	font:13px/1.231 arial,helvetica,clean,sans-serif;
+	*font-size:small; /* for IE */
+	*font:x-small; /* for IE in quirks mode */
+	font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+}
+/**
+ * Nudge down to get to 13px equivalent for these form elements
+ */
+select,
+input,
+button,
+textarea {
+	font:99% arial,helvetica,clean,sans-serif;
+	font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+}
+/**
+ * To help tables remember to inherit
+ */
+table {
+	font-size:inherit;
+	font:100%;
+}
+/**
+ * Bump up IE to get to 13px equivalent for these fixed-width elements
+ */
+pre,
+code,
+kbd,
+samp,
+tt {
+	font-family:monospace;
+	*font-size:108%;
+	line-height:100%;
+}
+
+/*
+Sticky Footer Solution
+by Steve Hatcher
+http://stever.ca
+http://www.cssstickyfooter.com
+*/
+
+html, body {height: 100%;}
+#container {min-height: 100%;}
+#contents {
+	/*overflow: auto;*/
+	padding-bottom: 53px;
+}
+footer {
+	position: relative;
+	margin-top: -53px; /* negative value of footer height */
+	height: 53px;
+	clear: both;
+}
+/*Opera Fix*/
+body:before {/* thanks to Maleika (Kohoutec)*/
+	content: "";
+	height: 100%;
+	float: left;
+	width: 0;
+	margin-top: -32767px;/* thank you Erik J - negate effect of float*/
+}
+/*ie6 Fix*/
+.ie6 #container {
+	display: table;
+	height: 100%;
+}
+/*
+fixd header
+*/
+.ie6 html {
+	overflow: hidden;
+}
+.ie6 body {
+	overflow: hidden;
+	background: url(null) fixed;
+	background-attachment: fixed;
+}
+#site-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+.ie6 #site-header  {
+	position: absolute;
+	top: expression(eval(document.documentElement.scrollTop+0));
+}
+
+/*
+common style
+*/
+#container {
+	background: url(/images/contents_bg.png) repeat 0 0;
+	z-index: 9;
+}
+#site-header {
+	width: 100%;
+	height: 76px;
+	background: url(/images/bg_header.png) repeat-x 0 0;
+}
+.header-inner {
+	position: relative;
+	width: 962px;
+	margin: 0 auto;
+}
+#logo {
+	width: 222px;
+	height: 74px;
+}
+#logo a {
+	display: block;
+	width: 222px;
+	height: 74px;
+	background: url(/images/logo01.png) no-repeat;
+	text-indent: -9999px;
+}
+#global-nav {
+	position: absolute;
+	top: 0;
+	left: 290px;
+	letter-spacing: -0.4em;
+}
+.nav-contents {
+	position: relative;
+	top: 42px;
+	left: 0;
+	width: 668px;
+}
+.nav-contents li {
+	display: inline-block;
+}
+.lt-ie8 .nav-contents li {
+	display: inline;
+	zoom: 1;
+}
+.nav-contents li a,
+.nav-contents li span {
+	display: block;
+	overflow: hidden;
+	padding: 0;
+	border: none;
+	width: 0;
+	height: 32px;
+	background: url(/images/nav_header.png) no-repeat 0 0;
+	text-align: left;
+	text-indent: -9999px;
+}
+.nav-contents .nav01,
+.nav-contents .nav02,
+.nav-contents .nav03 {
+	margin: 0 16px;
+}
+.nav-contents .nav01 a {
+	width: 68px;
+	background-position: -16px -42px;
+}
+.nav-contents .nav02 a {
+	width: 109px;
+	background-position: -116px -42px;
+}
+.nav-contents .nav03 a {
+	width: 71px;
+	background-position: -259px -42px;
+}
+.nav-contents .nav04 {
+	margin: 0 13px 0 45px;
+}
+.nav-contents .nav05 {
+	margin: 0 13px;
+}
+.nav-contents .nav04 a {
+	width: 76px;
+	background-position: -390px -42px;
+}
+.nav-contents .nav05 a {
+	width: 164px;
+	background-position: -493px -42px;
+}
+.nav-contents a:hover {
+	background-position-y: -116px;
+}
+.nav-login {
+	position: absolute;
+	top: 0;
+	left: 337px;
+	width: 320px;
+}
+.nav-login li {
+	display: inline-block;
+}
+.lt-ie8 .nav-login li {
+	display: inline;
+	zoom: 1;
+}
+.nav-login li a,
+.nav-login li span {
+	display: block;
+	overflow: hidden;
+	padding: 0;
+	border: none;
+	width: 0;
+	height: 29px;
+	background: url(/images/nav_header.png) no-repeat 0 0;
+	text-align: left;
+	text-indent: -9999px;
+}
+.nav-login .nav01 a {
+	width: 160px;
+	background-position: -337px 0;
+}
+.nav-login .nav02 a {
+	width: 160px;
+	background-position: -498px 0;
+}
+.nav-login a:hover {
+	background-position-y: -74px;
+}
+#contents {
+	padding-top: 76px;
+}
+.main {
+	position: relative;
+	z-index: 10;
+	margin: 0 auto 60px;
+	padding: 0 30px;
+	width: 902px;
+}
+/* sitemap */
+#sitemap {
+	margin-top: 40px;
+	height: 270px;
+	background: url(/images/sitemap_bg03.png) repeat-x center top;
+}
+#sitemap-content {
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 0 12px;
+	padding-top: 65px;
+	width: 938px;
+	/*min-height: 254px;*/
+}
+.top #sitemap-content {
+	padding-top: 0px;
+}
+.nav-about {
+	float: left;
+	margin-right: 18px;
+	padding-top: 4px;
+	width: 106px;
+	font-size: 123.1%;
+	color: #ffffff;
+}
+#sitemap-content nav h1 {
+	padding: 6px 0;
+	font-size: 108%;
+	font-weight: bold;
+	color: #ffffff;
+}
+#sitemap-content .nav-about h1 a {
+	font-weight: normal;
+}
+#sitemap-content nav h1 a {
+	color: #ffffff;
+}
+#sitemap-content a {
+	color: #e6e5e5;
+	text-decoration: none;
+}
+#sitemap-content a:hover {
+	text-decoration: underline;
+}
+#sitemap-content nav li {
+	padding: 6px 0;
+	font-size: 93%;
+	line-height: 1.2;
+}
+.nav-media {
+	float: left;
+	margin-right: 22px;
+	padding-top: 4px;
+	width: 136px;
+}
+.nav-sponsor {
+	float: left;
+	margin-right: 23px;
+	padding-top: 4px;
+	width: 136px;
+}
+.nav-utility {
+	float: left;
+	margin-right: 28px;
+	padding-top: 3px;
+	width: 136px;
+}
+.link-app-portal {
+	float: left;
+	margin-right: 0;
+	padding-top: 8px;
+	width: 308px;
+}
+.link-app-portal li {
+	margin-bottom: 17px;
+	font-size: 93%;
+	line-height: 1.4;
+	list-style-type: none;
+}
+.giveapp {
+	width: 184px;
+}
+.giveapp img {
+	margin-bottom: 4px;
+}
+.link-app-portal a {
+	display: inline-block;
+}
+.lt-ie8 .link-app-portal a {
+	display: inline;
+	zoom: 1;
+}
+.link-app-portal img {
+	vertical-align: bottom;
+}
+.link-app-portal .banner-app-store:hover img,
+.link-app-portal .banner-google-play:hover img {
+	opacity: 0.8;
+	-ms-filter: "alpha(opacity=80)";
+	filter: alpha(opacity=80);
+}
+/*.link-app-portal .banner-app-store img {
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/btn_app_store.png', sizingMethod='scale');
+}
+.link-app-portal .banner-google-play img {
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/btn_google_play.png', sizingMethod='scale');
+}*/
+#page-top {
+	position: fixed;
+	right: 40px;
+	bottom: 0;
+	width: 75px;
+	z-index: 100;
+}
+.ie6 #page-top {
+	position: absolute;
+	top: expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-68)+'px');
+}
+#page-top a {
+	display: block;
+	margin-left: 3px;
+	width: 75px;
+	height: 68px;
+	background: url(/images/btn_pagetop.png) no-repeat 0 0;
+	text-indent: -9999px;
+}
+#page-top a:hover {
+	background-position-y: -68px;
+}
+#social-nav {
+	position: fixed;
+	/*position: absolute;*/
+	right: 35px;
+	bottom: 0;
+	width: 82px;
+	height: 112px;
+	z-index: 99;
+}
+#social-nav ul {
+	position: relative;
+	width: 82px;
+	height: 40px;
+}
+#btn-twitter {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 41px;
+	height: 40px;
+}
+#btn-twitter a {
+	display: block;
+	width: 41px;
+	height: 40px;
+	background: url(/images/btn_social.png) no-repeat 0 0;
+	text-indent: -9999px;
+}
+#btn-twitter a:hover {
+	background-position-y: -40px;
+}
+#btn-facebook {
+	position: absolute;
+	top: 0;
+	left: 41px;
+	width: 41px;
+	height: 40px;
+}
+#btn-facebook a {
+	display: block;
+	width: 41px;
+	height: 40px;
+	background: url(/images/btn_social.png) no-repeat -41px 0;
+	text-indent: -9999px;
+}
+#btn-facebook a:hover {
+	background-position-y: -40px;
+}
+#site-footer {
+	height: 53px;
+	background: #02781e;
+	background: #037e24;
+	z-index: 10;
+}
+.footer-inner {
+	position: relative;
+	width: 962px;
+	margin: 0 auto;
+}
+#copyright {
+	padding: 14px 0 14px 98px;
+	height: 25px;
+	background: url(/images/logo02.png) no-repeat 12px center;
+	color: #ffffff;
+	font-size: 77%;
+	line-height: 25px;
+}
+#social-button {
+	position: absolute;
+	top: -20px;
+	left: 10px;
+	width: 962px;
+}
+.fb {
+	float: left;
+	display: inline-block;
+	margin-right: 30px;
+}
+.tw {
+	overflow: hidden;
+	float: left;
+	display: inline-block;
+	width: 120px;
+}
+.gp {
+	float: left;
+	display: inline-block;
+}
+.lt-ie8 #social-button li {
+	display: inline;
+	zoom: 1;
+}

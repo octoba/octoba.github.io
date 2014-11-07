@@ -1,0 +1,330 @@
+/* reset */
+body {
+	-webkit-text-size-adjust: 100%;
+	font: 100%/100% "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color:#000000;
+}
+
+/* clearfix */
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+.clearfix {
+	min-height: 1px;
+}
+* html .clearfix {
+	height: 1px;
+	/*¥*//*/
+	height: auto;
+	overflow: hidden;
+	/**/
+}
+.body_border{
+	border:1px solid #8f8f8f;
+	border-radius:8px;
+}
+/*--------------------
+  Header
+--------------------*/
+header {
+	position: relative;
+	width: 100%;
+	padding: 3% 0;
+	border-radius: 7px 7px 0 0;
+	background: -webkit-gradient(linear,left top,left bottom,from(#12A5EE),to(#0b8ee8));
+	background: -moz-linear-gradient(top,#12A5EE, #0b8ee8);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#12A5EE,endColorstr=#0b8ee8);
+	box-sizing: border-box;
+	font-size: 100%;
+	font-weight: bold;
+	display:table;
+}
+.h_icon {
+	width: 26%;
+	display:table-cell;
+	vertical-align:middle;
+}
+.h_icon img {
+		border-radius: 10px;
+		width: 56%;
+		height:auto;
+		margin:0 27% 0 17%
+	}
+.app_name {
+	display:table-cell;
+	width: 77%;
+	vertical-align:middle;
+	color:#fff;
+	text-align:left;
+}
+.item_list {
+	width: 90%;
+	margin-bottom: 20px;
+	text-align: right;
+	font-size: 70%;
+}
+/*--------------------
+  Main items
+--------------------*/
+section {
+	width:100%;
+	margin: 0;
+	border-bottom:1px solid #12a5ee;
+}
+.wrap {
+	position: relative;
+	width:100%;
+	background:#f8f8f6;
+	box-sizing: border-box;
+	zoom: 1;
+	cursor: pointer;
+	display:table;
+	padding:3% 0 0 0;
+}
+.wrap.has_child{
+	position: relative;
+	width:100%;
+	background:#f8f8f6;
+	box-sizing: border-box;
+	zoom: 1;
+	cursor: pointer;
+	display:table;
+	padding:3% 0;
+}
+
+.icon_img {
+	display:table-cell;
+	width: 30%;
+	vertical-align:middle;
+}
+	.icon_img .icon_img_in{
+		width: 74%;
+		height: auto;
+		margin:0 13% 0 13%;
+		display:block;
+	}
+	.icon_img img {
+		width: 100%;
+		border-radius: 8px;
+	}
+.item {
+	display:table-cell;
+	width: 70%;
+	position: relative;
+	vertical-align:top;
+	padding:1% 0;
+}
+.item.non {
+	display:table-cell;
+	width: 92%;
+	position: relative;
+	vertical-align:top;
+	padding:1% 4% 15% 4%;
+}
+
+		.item_name {
+			font-size: 90%;
+		}
+		.item_info {
+			font-size: 70%;
+		}
+		
+.has_child .buy_area {
+	display:none;
+}
+
+.buy_area {
+	display:block;
+	padding:3% 4%;
+	width:92%;
+	background:#ffffff;
+}
+.buy_area_in {
+	display:table;
+	padding:0;
+	width:100%;
+	vertical-align:middle;
+}
+.num {
+	vertical-align:middle;
+	width:100%;
+	display:table;
+}
+.have {
+	display:table-cell;
+	width: 56%;
+	vertical-align:middle;
+}
+.unit {
+	font-size: 80%;
+}
+.price {
+	width: 20%;
+	text-align: right;
+	color:#12a5ee;
+	display:table-cell;
+	vertical-align:middle;
+}
+.buy {
+	width: 24%;
+	display:table-cell;
+	vertical-align:middle;
+}
+	.item_name {
+		display:block;
+		width: 100%;
+		margin-bottom: 2%;
+		font-weight: bold;
+		overflow: hidden;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		-webkit-text-overflow: ellipsis;
+		-o-text-overflow: ellipsis;
+	}
+	.item_info {
+		display:block;
+		width: 100%;
+		line-height: 150%;
+	}
+	.btn {
+		display:block;
+		border: 1px solid #0a7ebf;
+	background: -webkit-gradient(linear,left top,left bottom,from(#12A5EE),to(#0b8ee8));
+	background: -moz-linear-gradient(top,#12A5EE, #0b8ee8);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr=#12A5EE,endColorstr=#0b8ee8);
+	color:#ffffff;
+	text-align:center;
+	padding:8% 0;
+	width: calc(91% - 2px);
+	margin-left:9%;
+	font-size:80%;
+	white-space:nowrap;
+	}
+	.btn_p {
+		display:block;
+		border: 1px solid #535353;
+	background:#e4e4e4;
+	color:#535353;
+	text-align:center;
+	padding:8% 0;
+	width: calc(91% - 2px);
+	margin-left:9%;
+	font-size:80%;
+	white-space:nowrap;
+	}
+	
+	
+@media all and (orientation: portrait) {
+
+}
+@media all and (orientation: landscape) {
+}
+
+/*--------------------
+  Sub items
+--------------------*/
+
+.sub_wrap {
+	position: relative;
+	width: 100%;
+	zoom: 1;
+	display: none;
+	padding-top:3%;
+}
+.sub_wrap li a{
+	padding:0 4% 3% 4%;
+	width:92%;
+	display:block;
+	color:#000000;
+
+}
+.table {
+	display: table;
+	width: 100%;
+	background:#ffffff;
+	box-sizing: border-box;
+}
+
+.sub_icon {
+	display:table-cell;
+	width: 18%;
+	border-bottom:1px solid #fff;
+	vertical-align:middle;
+}
+	.sub_icon .sub_icon_in {
+		width: 80%;
+		height: auto;
+		margin:0 20% 0 0;
+		display:block;
+	}
+	.sub_icon img {
+		width: 100%;
+		border-radius: 5px;
+	}
+.sub_txt {
+	width: 38%;
+	display:table-cell;
+	border-bottom:1px solid #999999;
+	vertical-align:middle;
+}
+.sub_txt.non {
+	width: 56%;
+	display:table-cell;
+	border-bottom:1px solid #999999;
+	vertical-align:middle;
+}
+.sub_name {
+	padding: 0 2%;
+	font-size:90%;
+}
+.sub_num {
+	padding: 0 2%;
+	font-size:80%;
+}
+.sub_price {
+	width: 20%;
+	text-align: right;
+	color:#12a5ee;
+	display:table-cell;
+	border-bottom:1px solid #999999;
+	vertical-align:middle;
+}
+.sub_unit {
+	font-size: 80%;
+}
+.sub_btn {
+	width: 24%;
+	display:table-cell;
+	border-bottom:1px solid #999999;
+	vertical-align:middle;
+}
+
+.sub_wrap li:last-child a .sub_txt,.sub_wrap li:last-child a .sub_price,.sub_wrap li:last-child a .sub_btn{
+	border-bottom:1px solid #ffffff;
+}
+
+#btn_agreement,#btn_close,#btn_restore{
+	margin:8px auto;
+	width:96%;
+	padding:4% 0 !important;
+	border-radius:5px;
+}
+
+@media all and (orientation: portrait) {
+}
+
+@media all and (orientation: landscape) {
+}

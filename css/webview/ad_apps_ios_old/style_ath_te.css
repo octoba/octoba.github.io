@@ -1,0 +1,182 @@
+* { margin: 0; padding: 0; }
+body { font-size:100%; "ＭＳ Ｐゴシック",arial,helvetica,clean,sans-serif; }
+html,body { -webkit-text-size-adjust: none; }
+.clear { clear:both; }
+
+/*--------------------------------------------------------
+	ページ
+--------------------------------------------------------*/
+
+.header {
+	width:100%;
+	height:auto;
+	position:relative;
+}
+
+.header_img {
+	width:100%;
+	height:auto;
+}
+
+.other {
+	width:auto;
+	height:100%;
+	position:absolute;
+	top:0;
+	right:0;
+}
+
+.d_app {
+	width:100%;
+	padding-top:24px;
+}
+
+#space_line{
+	height: 8px;
+	background: black;
+
+}
+
+a { display:block; }
+
+
+
+/*================================================
+	アプリエリア
+================================================*/
+
+
+.l_app_w {
+	width: 49.5%;
+	background: #fff;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	position: relative;
+	border: solid 1px #aaa;
+	float: left;
+	position:relative;
+}
+
+.l_app_g {
+	width: 49.5%;
+	background:#fff;
+	padding-top:2%;
+	padding-bottom:2%;
+	border: solid 1px #aaa;
+	float: left;
+	position:relative;
+}
+
+.android.app_name {
+	font-size:200%;
+	margin-left:4%;
+	width: 80%;
+	height: 1.2em;
+	text-shadow:1px 0 1px black;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	margin-bottom:2%;
+}
+
+.app_name {
+	font-size:72%;
+	margin-left:4%;
+	width: 80%;
+	height: 1.2em;
+	text-shadow:0px 0 1px #000;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	margin-bottom:1%;
+}
+
+
+.left_area { float:left; width:40%; margin: 2% 0 0 4%;}
+.right_area { float:right; width: 50%; margin: 3% 4% 0 0; }
+
+.app_icon { width:100%; }
+
+.app_value {
+	font-size:60%;
+	color:#aaa;
+	margin:0 3% 0 4%;
+}
+
+.app_value {
+	font-size:60%;
+	color:#aaa;
+	margin:0 3% 0 4%;
+}
+
+.app_star {
+	width: 100%;
+	margin-top:4%;
+}
+
+.link_area_s { margin-top:4%; width:100%; }
+
+.gplay_btn {
+	width: 80%;
+	padding: 4% 8%;
+	text-align:center;
+	background-color:#42B6C9;
+	border:solid 2px #ffffff;
+	margin:0 2% 0 1%;
+}
+
+
+.new_mark {
+	position:absolute;
+	width:28%;
+	height:auto;
+	top:0;
+	right:0;
+}
+
+.app_text {
+	width: 100%;
+	font-size:58%;
+	color:#555;
+	height:3.6em;
+	margin:0 2% 4% 3%;
+	overflow:hidden;
+	line-height:1.3em;
+	word-break: break-all;
+}
+
+
+/*--------------------------------------------------------
+	common.css
+--------------------------------------------------------*/
+
+.boreder_list {
+	border: solid 1px #eee;
+	width:99%;
+}
+
+.kiyaku_btn {
+	width:92%;
+	padding:3% 5% 3% 5%;
+	border-radius: 8px;
+	background: -moz-linear-gradient(
+		top,
+		rgba(255,255,255,0) 0%,
+		rgba(0,0,0,0.25)), #fff;
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(rgba(255,255,255,0)),
+		to(rgba(0,0,0,0.25))), #fff;
+	border: 1px solid #ccc;
+	margin:5% 4% 5% 4%;
+	font-size:100%;
+	color:#aaa;
+}
+
+
+/***** 必須プロパティ *****/
+#slider1 { height:auto; border:solid 1px #000; background:#000; position:relative; display:block; }
